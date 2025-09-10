@@ -142,6 +142,7 @@ namespace CoreWebApiSuperHero.Controllers
 
         [HttpPut]
         [Route("UpdateRole")]
+        [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is deleted successfully
         public async Task<ActionResult<ApiResponse>> UpdateRole(RoleDTO objRoleDTO)
         {
             try
