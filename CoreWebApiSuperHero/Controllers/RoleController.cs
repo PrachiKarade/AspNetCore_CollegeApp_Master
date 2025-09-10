@@ -143,6 +143,11 @@ namespace CoreWebApiSuperHero.Controllers
         [HttpPut]
         [Route("UpdateRole")]
         [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is deleted successfully
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
+        [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
+
         public async Task<ActionResult<ApiResponse>> UpdateRole(RoleDTO objRoleDTO)
         {
             try
