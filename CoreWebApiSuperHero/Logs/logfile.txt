@@ -1,0 +1,1099 @@
+2025-09-10 07:58:48,425 [1] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-09-10 07:58:48,466 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting starting
+2025-09-10 07:58:48,485 [1]  INFO Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-10 07:58:48,491 [1] DEBUG Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys\key-b0c00968-fbeb-4c5d-bff2-5c436e2822fb.xml'.
+2025-09-10 07:58:48,497 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb}.
+2025-09-10 07:58:48,505 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver Considering key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} with expiration date 2025-12-03 19:38:23Z as default key.
+2025-09-10 07:58:48,508 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 07:58:48,512 [1] DEBUG Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor Decrypting secret element using Windows DPAPI.
+2025-09-10 07:58:48,515 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 07:58:48,518 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-09-10 07:58:48,520 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-09-10 07:58:48,523 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider Using key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} as the default key.
+2025-09-10 07:58:48,524 [1] DEBUG Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService Key ring with default key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} was loaded during application startup.
+2025-09-10 07:58:48,669 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFA64G6NJ" reset.
+2025-09-10 07:58:48,671 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFA64G6NK" received FIN.
+2025-09-10 07:58:48,672 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-10 07:58:48,674 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-10 07:58:48,675 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly CoreWebApiSuperHero
+2025-09-10 07:58:48,676 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-09-10 07:58:48,677 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-09-10 07:58:48,678 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-09-10 07:58:48,683 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NK" accepted.
+2025-09-10 07:58:48,683 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NJ" accepted.
+2025-09-10 07:58:48,686 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NK" started.
+2025-09-10 07:58:48,686 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NJ" started.
+2025-09-10 07:58:48,700 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-09-10 07:58:48,700 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Failed to authenticate HTTPS connection.
+Microsoft.AspNetCore.Connections.ConnectionResetException: An existing connection was forcibly closed by the remote host.
+ ---> System.Net.Sockets.SocketException (10054): An existing connection was forcibly closed by the remote host.
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.ReadAsync(CancellationToken token)
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-09-10 07:58:48,731 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NJ" stopped.
+2025-09-10 07:58:48,731 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NK" stopped.
+2025-09-10 07:58:48,736 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFA64G6NJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-10 07:58:48,736 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFA64G6NK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-10 07:58:48,779 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-10 07:58:48,782 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-10 07:58:48,783 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-10 07:58:48,785 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting started
+2025-09-10 07:58:48,952 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NL" accepted.
+2025-09-10 07:58:48,954 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFA64G6NL" started.
+2025-09-10 07:58:49,034 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Connection 0HNFGFA64G6NL established using the following protocol: Tls13
+2025-09-10 07:58:49,098 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/index.html - - -
+2025-09-10 07:58:49,184 [.NET TP Worker] DEBUG Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware Wildcard detected, all requests with hosts will be allowed.
+2025-09-10 07:58:49,217 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2025-09-10 07:58:49,220 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2025-09-10 07:58:49,239 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2025-09-10 07:58:49,242 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2025-09-10 07:58:49,248 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/index.html - 200 - text/html;charset=utf-8 156.6245ms
+2025-09-10 07:58:49,271 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - -
+2025-09-10 07:58:49,271 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_vs/browserLink - - -
+2025-09-10 07:58:49,285 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 13.9893ms
+2025-09-10 07:58:49,307 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 36.1687ms
+2025-09-10 07:58:49,338 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - - -
+2025-09-10 07:58:49,367 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 29.2715ms
+2025-09-10 08:00:04,183 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 PUT https://localhost:7128/api/Role/UpdateRole - text/json 102
+2025-09-10 08:00:04,194 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware PUT requests are not supported
+2025-09-10 08:00:04,216 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/api/Role/UpdateRole'
+2025-09-10 08:00:04,220 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)' with route pattern 'api/Role/UpdateRole' is valid for the request path '/api/Role/UpdateRole'
+2025-09-10 08:00:04,223 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:00:04,227 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:00:04,246 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "UpdateRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] UpdateRole(CoreWebApiSuperHero.Models.RoleDTO) on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:00:04,249 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:00:04,250 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:00:04,251 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:00:04,253 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:00:04,254 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:00:04,257 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:00:04,371 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-10 08:00:04,593 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Model The index {'UserId'} was not created on entity type 'UserRoleMapping' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-09-10 08:00:04,713 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:00:04,715 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:00:04,725 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:00:04,728 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' using the name '' in request data ...
+2025-09-10 08:00:04,729 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'text/json'.
+2025-09-10 08:00:04,731 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'text/json'.
+2025-09-10 08:00:04,740 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFA64G6NL", Request id "0HNFGFA64G6NL:00000009": started reading request body.
+2025-09-10 08:00:04,741 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFA64G6NL", Request id "0HNFGFA64G6NL:00000009": done reading request body.
+2025-09-10 08:00:04,783 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:00:04,785 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:00:04,786 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:00:04,792 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:00:04,842 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Role>()
+    .AsNoTracking()
+    .Where(role => role.RoleId == __objRoleDTO_RoleId_0)
+    .FirstOrDefault()'
+2025-09-10 08:00:04,983 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Role>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__objRoleDTO_RoleId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__objRoleDTO_RoleId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Role entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Role instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Role);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]: 
+                            {
+                                return 
+                                {
+                                    Role instance;
+                                    instance = new Role();
+                                    instance.<RoleId>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Createdate>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<Description>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(3);
+                                    instance.<IsDeleated>k__BackingField = dataReader.GetBoolean(4);
+                                    instance.<RoleName>k__BackingField = dataReader.GetString(5);
+                                    instance.<Updatedate>k__BackingField = dataReader.GetDateTime(6);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Role)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: CoreWebApiSuperHero.Data.CollegeDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-10 08:00:05,012 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:00:05,025 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (11ms).
+2025-09-10 08:00:05,029 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,145 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,149 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:00:05,154 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (3ms).
+2025-09-10 08:00:05,159 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (11ms).
+2025-09-10 08:00:05,166 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__objRoleDTO_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__objRoleDTO_RoleId_0
+2025-09-10 08:00:05,211 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (46ms) [Parameters=[@__objRoleDTO_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__objRoleDTO_RoleId_0
+2025-09-10 08:00:05,224 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,230 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 13ms reading results.
+2025-09-10 08:00:05,233 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,238 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (4ms).
+2025-09-10 08:00:05,279 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:00:05,284 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges starting for 'CollegeDBContext'.
+2025-09-10 08:00:05,287 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges starting for 'CollegeDBContext'.
+2025-09-10 08:00:05,292 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges completed for 'CollegeDBContext'.
+2025-09-10 08:00:05,325 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,327 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,330 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:00:05,331 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:00:05,333 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-10 08:00:05,334 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Roles] SET [Createdate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleated] = @p3, [RoleName] = @p4, [Updatedate] = @p5
+OUTPUT 1
+WHERE [RoleId] = @p6;
+2025-09-10 08:00:05,341 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Roles] SET [Createdate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleated] = @p3, [RoleName] = @p4, [Updatedate] = @p5
+OUTPUT 1
+WHERE [RoleId] = @p6;
+2025-09-10 08:00:05,347 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,348 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 4ms reading results.
+2025-09-10 08:00:05,350 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,351 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:00:05,358 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking An entity of type 'Role' tracked by 'CollegeDBContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:00:05,361 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges completed for 'CollegeDBContext' with 1 entities written to the database.
+2025-09-10 08:00:05,365 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:00:05,368 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:00:05,370 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:00:05,372 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing OkObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:00:05,400 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero) in 1140.4672ms
+2025-09-10 08:00:05,402 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:00:05,405 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:00:05,409 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:00:05,412 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (2ms).
+2025-09-10 08:00:05,414 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 PUT https://localhost:7128/api/Role/UpdateRole - 200 274 text/json;+charset=utf-8 1230.8313ms
+2025-09-10 08:01:17,815 [1] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-09-10 08:01:17,859 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting starting
+2025-09-10 08:01:17,875 [1]  INFO Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-10 08:01:17,880 [1] DEBUG Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys\key-b0c00968-fbeb-4c5d-bff2-5c436e2822fb.xml'.
+2025-09-10 08:01:17,885 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb}.
+2025-09-10 08:01:17,891 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver Considering key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} with expiration date 2025-12-03 19:38:23Z as default key.
+2025-09-10 08:01:17,894 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 08:01:17,896 [1] DEBUG Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor Decrypting secret element using Windows DPAPI.
+2025-09-10 08:01:17,898 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 08:01:17,900 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-09-10 08:01:17,902 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-09-10 08:01:17,903 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider Using key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} as the default key.
+2025-09-10 08:01:17,904 [1] DEBUG Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService Key ring with default key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} was loaded during application startup.
+2025-09-10 08:01:18,015 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-10 08:01:18,017 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-10 08:01:18,018 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly CoreWebApiSuperHero
+2025-09-10 08:01:18,019 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-09-10 08:01:18,020 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-09-10 08:01:18,021 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-09-10 08:01:18,074 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-10 08:01:18,076 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-10 08:01:18,077 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-10 08:01:18,078 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting started
+2025-09-10 08:01:18,433 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFBIOOOF8" received FIN.
+2025-09-10 08:01:18,439 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFBIOOOF8" accepted.
+2025-09-10 08:01:18,441 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFBIOOOF8" started.
+2025-09-10 08:01:18,453 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-09-10 08:01:18,478 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFBIOOOF8" stopped.
+2025-09-10 08:01:18,483 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFBIOOOF8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-10 08:01:18,653 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFBIOOOF9" accepted.
+2025-09-10 08:01:18,655 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFBIOOOF9" started.
+2025-09-10 08:01:18,752 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Connection 0HNFGFBIOOOF9 established using the following protocol: Tls13
+2025-09-10 08:01:18,815 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/index.html - - -
+2025-09-10 08:01:18,896 [.NET TP Worker] DEBUG Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware Wildcard detected, all requests with hosts will be allowed.
+2025-09-10 08:01:18,931 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2025-09-10 08:01:18,935 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2025-09-10 08:01:18,953 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2025-09-10 08:01:18,957 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2025-09-10 08:01:18,963 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/index.html - 200 - text/html;charset=utf-8 154.0595ms
+2025-09-10 08:01:18,969 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - -
+2025-09-10 08:01:18,976 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_vs/browserLink - - -
+2025-09-10 08:01:18,977 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 6.7525ms
+2025-09-10 08:01:19,021 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 44.6085ms
+2025-09-10 08:01:19,054 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - - -
+2025-09-10 08:01:19,087 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 33.3453ms
+2025-09-10 08:01:44,797 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/index.html - - -
+2025-09-10 08:01:44,807 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2025-09-10 08:01:44,809 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2025-09-10 08:01:44,814 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2025-09-10 08:01:44,819 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2025-09-10 08:01:44,821 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/index.html - 200 - text/html;charset=utf-8 23.6124ms
+2025-09-10 08:01:44,830 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_vs/browserLink - - -
+2025-09-10 08:01:44,832 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - -
+2025-09-10 08:01:44,838 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 5.6887ms
+2025-09-10 08:01:44,859 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 29.7366ms
+2025-09-10 08:01:44,898 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - - -
+2025-09-10 08:01:44,936 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 38.1780ms
+2025-09-10 08:02:18,879 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 PUT https://localhost:7128/api/Role/UpdateRole - application/json-patch+json 102
+2025-09-10 08:02:18,889 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware PUT requests are not supported
+2025-09-10 08:02:18,921 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/api/Role/UpdateRole'
+2025-09-10 08:02:18,926 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)' with route pattern 'api/Role/UpdateRole' is valid for the request path '/api/Role/UpdateRole'
+2025-09-10 08:02:18,929 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:02:18,933 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:02:18,955 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "UpdateRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] UpdateRole(CoreWebApiSuperHero.Models.RoleDTO) on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:02:18,959 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:02:18,962 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:02:18,964 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:02:18,966 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:02:18,967 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:02:18,970 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:02:19,088 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-10 08:02:19,402 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Model The index {'UserId'} was not created on entity type 'UserRoleMapping' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-09-10 08:02:19,565 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:02:19,568 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:02:19,573 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:02:19,576 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' using the name '' in request data ...
+2025-09-10 08:02:19,579 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json-patch+json'.
+2025-09-10 08:02:19,581 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json-patch+json'.
+2025-09-10 08:02:19,586 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFBIOOOF9", Request id "0HNFGFBIOOOF9:00000011": started reading request body.
+2025-09-10 08:02:19,588 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFBIOOOF9", Request id "0HNFGFBIOOOF9:00000011": done reading request body.
+2025-09-10 08:02:19,642 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:02:19,644 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:02:19,646 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:02:19,653 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:02:19,717 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Role>()
+    .AsNoTracking()
+    .Where(role => role.RoleId == __objRoleDTO_RoleId_0)
+    .FirstOrDefault()'
+2025-09-10 08:02:19,906 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Role>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__objRoleDTO_RoleId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__objRoleDTO_RoleId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Role entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Role instance1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Role);
+                (object)dataReader.GetInt32(0) != null ? 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]: 
+                            {
+                                return 
+                                {
+                                    Role instance;
+                                    instance = new Role();
+                                    instance.<RoleId>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Createdate>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<Description>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(3);
+                                    instance.<IsDeleated>k__BackingField = dataReader.GetBoolean(4);
+                                    instance.<RoleName>k__BackingField = dataReader.GetString(5);
+                                    instance.<Updatedate>k__BackingField = dataReader.GetDateTime(6);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: NoTracking, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Role)
+                    }
+                    ;
+                    return instance1;
+                } : 
+                {
+                    object[] keyValues1;
+                    keyValues1 = new object[]{ (object)dataReader.GetInt32(0) };
+                    return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                        entityType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")], 
+                        properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd } | Resolver: c => c.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role").FindPrimaryKey().Properties], 
+                        keyValues: keyValues1);
+                };
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: CoreWebApiSuperHero.Data.CollegeDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-10 08:02:19,941 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:02:19,961 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (16ms).
+2025-09-10 08:02:19,966 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,116 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,120 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:02:20,127 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (4ms).
+2025-09-10 08:02:20,135 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (15ms).
+2025-09-10 08:02:20,144 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__objRoleDTO_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__objRoleDTO_RoleId_0
+2025-09-10 08:02:20,199 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (57ms) [Parameters=[@__objRoleDTO_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__objRoleDTO_RoleId_0
+2025-09-10 08:02:20,216 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,224 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 19ms reading results.
+2025-09-10 08:02:20,229 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,235 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (6ms).
+2025-09-10 08:02:20,292 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:02:20,298 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges starting for 'CollegeDBContext'.
+2025-09-10 08:02:20,301 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges starting for 'CollegeDBContext'.
+2025-09-10 08:02:20,308 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges completed for 'CollegeDBContext'.
+2025-09-10 08:02:20,352 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,355 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,358 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:02:20,360 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (2ms).
+2025-09-10 08:02:20,363 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-09-10 08:02:20,365 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Roles] SET [Createdate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleated] = @p3, [RoleName] = @p4, [Updatedate] = @p5
+OUTPUT 1
+WHERE [RoleId] = @p6;
+2025-09-10 08:02:20,372 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Roles] SET [Createdate] = @p0, [Description] = @p1, [IsActive] = @p2, [IsDeleated] = @p3, [RoleName] = @p4, [Updatedate] = @p5
+OUTPUT 1
+WHERE [RoleId] = @p6;
+2025-09-10 08:02:20,379 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,381 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 6ms reading results.
+2025-09-10 08:02:20,383 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,385 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:02:20,392 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking An entity of type 'Role' tracked by 'CollegeDBContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:02:20,396 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges completed for 'CollegeDBContext' with 1 entities written to the database.
+2025-09-10 08:02:20,401 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:02:20,405 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:02:20,408 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:02:20,410 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing OkObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:02:20,447 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero) in 1472.6667ms
+2025-09-10 08:02:20,449 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.UpdateRole (CoreWebApiSuperHero)'
+2025-09-10 08:02:20,453 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:02:20,457 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:02:20,460 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (2ms).
+2025-09-10 08:02:20,463 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 PUT https://localhost:7128/api/Role/UpdateRole - 200 292 text/json;+charset=utf-8 1586.5912ms
+2025-09-10 08:27:59,859 [1] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2025-09-10 08:27:59,913 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting starting
+2025-09-10 08:27:59,934 [1]  INFO Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager User profile is available. Using 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-10 08:27:59,940 [1] DEBUG Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository Reading data from file 'C:\Users\prach\AppData\Local\ASP.NET\DataProtection-Keys\key-b0c00968-fbeb-4c5d-bff2-5c436e2822fb.xml'.
+2025-09-10 08:27:59,945 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager Found key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb}.
+2025-09-10 08:27:59,954 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver Considering key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} with expiration date 2025-12-03 19:38:23Z as default key.
+2025-09-10 08:27:59,957 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 08:27:59,960 [1] DEBUG Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor Decrypting secret element using Windows DPAPI.
+2025-09-10 08:27:59,963 [1] DEBUG Microsoft.AspNetCore.DataProtection.TypeForwardingActivator Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-09-10 08:27:59,966 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2025-09-10 08:27:59,968 [1] DEBUG Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2025-09-10 08:27:59,970 [1] DEBUG Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider Using key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} as the default key.
+2025-09-10 08:27:59,972 [1] DEBUG Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService Key ring with default key {b0c00968-fbeb-4c5d-bff2-5c436e2822fb} was loaded during application startup.
+2025-09-10 08:28:00,116 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-10 08:28:00,117 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-10 08:28:00,119 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly CoreWebApiSuperHero
+2025-09-10 08:28:00,120 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-09-10 08:28:00,121 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-09-10 08:28:00,122 [1] DEBUG Microsoft.AspNetCore.Hosting.Diagnostics Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-09-10 08:28:00,180 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-10 08:28:00,181 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-10 08:28:00,183 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-10 08:28:00,184 [1] DEBUG Microsoft.Extensions.Hosting.Internal.Host Hosting started
+2025-09-10 08:28:00,565 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFQG7SESF" received FIN.
+2025-09-10 08:28:00,571 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFQG7SESF" accepted.
+2025-09-10 08:28:00,574 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFQG7SESF" started.
+2025-09-10 08:28:00,588 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-09-10 08:28:00,621 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFQG7SESF" stopped.
+2025-09-10 08:28:00,625 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets Connection id "0HNFGFQG7SESF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-09-10 08:28:00,813 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFQG7SESG" accepted.
+2025-09-10 08:28:00,817 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Connections Connection id "0HNFGFQG7SESG" started.
+2025-09-10 08:28:00,912 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware Connection 0HNFGFQG7SESG established using the following protocol: Tls13
+2025-09-10 08:28:00,989 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/index.html - - -
+2025-09-10 08:28:01,095 [.NET TP Worker] DEBUG Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware Wildcard detected, all requests with hosts will be allowed.
+2025-09-10 08:28:01,128 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup is scheduled to include Browser Link script injection.
+2025-09-10 08:28:01,131 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup is scheduled to include browser refresh script injection.
+2025-09-10 08:28:01,142 [.NET TP Worker] DEBUG Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware Response markup was updated to include Browser Link script injection.
+2025-09-10 08:28:01,145 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware Response markup was updated to include browser refresh script injection.
+2025-09-10 08:28:01,150 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/index.html - 200 - text/html;charset=utf-8 168.7175ms
+2025-09-10 08:28:01,165 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_vs/browserLink - - -
+2025-09-10 08:28:01,165 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - -
+2025-09-10 08:28:01,179 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 14.1493ms
+2025-09-10 08:28:01,207 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.5946ms
+2025-09-10 08:28:01,233 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - - -
+2025-09-10 08:28:01,269 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 36.3171ms
+2025-09-10 08:28:12,268 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/api/Role/All - - -
+2025-09-10 08:28:12,274 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path  does not match the path filter
+2025-09-10 08:28:12,305 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 2 candidate(s) found for the request path '/api/Role/All'
+2025-09-10 08:28:12,311 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)' with route pattern 'api/Role/All' is valid for the request path '/api/Role/All'
+2025-09-10 08:28:12,313 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetRoleByName (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleName:alpha}' is valid for the request path '/api/Role/All'
+2025-09-10 08:28:12,315 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:28:12,321 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:28:12,342 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] GetAllRoles() on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:28:12,346 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:28:12,347 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:28:12,349 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:28:12,351 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:28:12,352 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:28:12,356 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:28:12,509 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-09-10 08:28:12,838 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Model The index {'UserId'} was not created on entity type 'UserRoleMapping' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2025-09-10 08:28:13,024 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:28:13,027 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:28:13,064 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Role>()'
+2025-09-10 08:28:13,254 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Role>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+        SELECT r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+        FROM Roles AS r) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+        SELECT r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+        FROM Roles AS r, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Role entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Role instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Role);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Role.RoleId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Role)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]: 
+                        {
+                            return 
+                            {
+                                Role instance;
+                                instance = new Role();
+                                instance.<RoleId>k__BackingField = dataReader.GetInt32(0);
+                                instance.<Createdate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Description>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                instance.<IsActive>k__BackingField = dataReader.GetBoolean(3);
+                                instance.<IsDeleated>k__BackingField = dataReader.GetBoolean(4);
+                                instance.<RoleName>k__BackingField = dataReader.GetString(5);
+                                instance.<Updatedate>k__BackingField = dataReader.GetDateTime(6);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Role)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: CoreWebApiSuperHero.Data.CollegeDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-09-10 08:28:13,292 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:28:13,309 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (15ms).
+2025-09-10 08:28:13,314 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:13,466 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:13,470 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:28:13,478 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (5ms).
+2025-09-10 08:28:13,481 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (11ms).
+2025-09-10 08:28:13,487 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:28:13,527 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:28:13,558 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:28:13,582 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:28:13,589 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:13,597 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 62ms reading results.
+2025-09-10 08:28:13,600 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:13,607 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (6ms).
+2025-09-10 08:28:13,624 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:28:13,629 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:28:13,631 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:28:13,633 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing ObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:28:13,712 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero) in 1352.462ms
+2025-09-10 08:28:13,714 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:28:13,718 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:28:13,723 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:13,726 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (3ms).
+2025-09-10 08:28:13,729 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/api/Role/All - 200 211 text/json;+charset=utf-8 1460.8207ms
+2025-09-10 08:28:39,260 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 POST https://localhost:7128/api/Role - text/json 84
+2025-09-10 08:28:39,267 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware POST requests are not supported
+2025-09-10 08:28:39,272 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/api/Role'
+2025-09-10 08:28:39,273 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.CreateRoleAsync (CoreWebApiSuperHero)' with route pattern 'api/Role' is valid for the request path '/api/Role'
+2025-09-10 08:28:39,275 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.CreateRoleAsync (CoreWebApiSuperHero)'
+2025-09-10 08:28:39,278 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.CreateRoleAsync (CoreWebApiSuperHero)'
+2025-09-10 08:28:39,292 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "CreateRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] CreateRoleAsync(CoreWebApiSuperHero.Models.RoleDTO) on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:28:39,295 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:28:39,296 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:28:39,298 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:28:39,300 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:28:39,301 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:28:39,303 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:28:39,362 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:28:39,365 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:28:39,372 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:28:39,377 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' using the name '' in request data ...
+2025-09-10 08:28:39,380 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'text/json'.
+2025-09-10 08:28:39,383 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'text/json'.
+2025-09-10 08:28:39,390 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFQG7SESG", Request id "0HNFGFQG7SESG:0000000B": started reading request body.
+2025-09-10 08:28:39,391 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Server.Kestrel Connection id "0HNFGFQG7SESG", Request id "0HNFGFQG7SESG:0000000B": done reading request body.
+2025-09-10 08:28:39,420 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:28:39,421 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to bind parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:28:39,423 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO' ...
+2025-09-10 08:28:39,433 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to validate the bound parameter 'objRoleDTO' of type 'CoreWebApiSuperHero.Models.RoleDTO'.
+2025-09-10 08:28:39,465 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking 'CollegeDBContext' generated a temporary value for the property 'Role.RoleId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:28:39,480 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:28:39,485 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges starting for 'CollegeDBContext'.
+2025-09-10 08:28:39,491 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges starting for 'CollegeDBContext'.
+2025-09-10 08:28:39,506 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges completed for 'CollegeDBContext'.
+2025-09-10 08:28:39,571 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:28:39,574 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (2ms).
+2025-09-10 08:28:39,575 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:39,578 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:39,581 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:28:39,583 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:28:39,589 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (7ms).
+2025-09-10 08:28:39,594 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Createdate], [Description], [IsActive], [IsDeleated], [RoleName], [Updatedate])
+OUTPUT INSERTED.[RoleId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-09-10 08:28:39,617 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 250), @p5='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Createdate], [Description], [IsActive], [IsDeleated], [RoleName], [Updatedate])
+OUTPUT INSERTED.[RoleId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-09-10 08:28:39,631 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking The foreign key property 'Role.RoleId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-09-10 08:28:39,639 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:39,641 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 22ms reading results.
+2025-09-10 08:28:39,644 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:39,645 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:28:39,655 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking An entity of type 'Role' tracked by 'CollegeDBContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:28:39,658 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges completed for 'CollegeDBContext' with 1 entities written to the database.
+2025-09-10 08:28:39,660 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:28:39,661 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/plain'.
+2025-09-10 08:28:39,663 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2025-09-10 08:28:39,666 [.NET TP Worker]  WARN Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor No output formatter was found for content types 'text/plain' to write the response.
+2025-09-10 08:28:39,668 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.CreateRoleAsync (CoreWebApiSuperHero) in 364.875ms
+2025-09-10 08:28:39,669 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.CreateRoleAsync (CoreWebApiSuperHero)'
+2025-09-10 08:28:39,671 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:28:39,672 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:28:39,674 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:28:39,675 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 POST https://localhost:7128/api/Role - 406 0 - 417.1959ms
+2025-09-10 08:29:07,699 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/api/Role/All - - -
+2025-09-10 08:29:07,706 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path  does not match the path filter
+2025-09-10 08:29:07,744 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 2 candidate(s) found for the request path '/api/Role/All'
+2025-09-10 08:29:07,746 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)' with route pattern 'api/Role/All' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:07,747 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetRoleByName (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleName:alpha}' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:07,749 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:07,751 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:07,752 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] GetAllRoles() on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:29:07,754 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:29:07,755 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:29:07,756 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:29:07,758 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:29:07,760 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:29:07,761 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:07,775 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:29:07,777 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:07,780 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:29:07,782 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (1ms).
+2025-09-10 08:29:07,783 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:07,784 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:07,786 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:07,787 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:07,789 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-10 08:29:07,790 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:07,795 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:07,796 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:07,798 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:07,800 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:07,801 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:07,803 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 6ms reading results.
+2025-09-10 08:29:07,804 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:07,805 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:07,808 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:29:07,809 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/plain'.
+2025-09-10 08:29:07,811 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2025-09-10 08:29:07,812 [.NET TP Worker]  WARN Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor No output formatter was found for content types 'text/plain' to write the response.
+2025-09-10 08:29:07,814 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero) in 52.352ms
+2025-09-10 08:29:07,815 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:07,816 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:29:07,818 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:07,819 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:29:07,821 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/api/Role/All - 406 0 - 122.2934ms
+2025-09-10 08:29:14,254 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/api/Role/All - - -
+2025-09-10 08:29:14,256 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path  does not match the path filter
+2025-09-10 08:29:14,258 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 2 candidate(s) found for the request path '/api/Role/All'
+2025-09-10 08:29:14,259 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)' with route pattern 'api/Role/All' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:14,262 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetRoleByName (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleName:alpha}' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:14,263 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:14,265 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:14,267 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] GetAllRoles() on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:29:14,268 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:29:14,270 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:29:14,272 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:29:14,274 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:29:14,275 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:29:14,277 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:14,280 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:29:14,282 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:14,284 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:29:14,286 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (1ms).
+2025-09-10 08:29:14,287 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:14,289 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:14,291 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:14,292 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:14,294 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-10 08:29:14,295 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:14,300 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:14,302 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:14,304 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:14,306 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:14,307 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:14,309 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 6ms reading results.
+2025-09-10 08:29:14,310 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:14,311 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:14,313 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:29:14,314 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:29:14,316 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:29:14,318 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing ObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:29:14,320 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero) in 43.4858ms
+2025-09-10 08:29:14,322 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:14,324 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:29:14,326 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:14,327 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:29:14,329 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/api/Role/All - 200 279 text/json;+charset=utf-8 75.4357ms
+2025-09-10 08:29:34,572 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 DELETE https://localhost:7128/api/Role/7 - - -
+2025-09-10 08:29:34,574 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware DELETE requests are not supported
+2025-09-10 08:29:34,576 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 1 candidate(s) found for the request path '/api/Role/7'
+2025-09-10 08:29:34,579 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.DeleteRole (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleId:int}' is valid for the request path '/api/Role/7'
+2025-09-10 08:29:34,581 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.DeleteRole (CoreWebApiSuperHero)'
+2025-09-10 08:29:34,583 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.DeleteRole (CoreWebApiSuperHero)'
+2025-09-10 08:29:34,590 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "DeleteRole", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] DeleteRole(Int32) on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:29:34,592 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:29:34,594 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:29:34,595 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:29:34,597 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:29:34,599 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:29:34,600 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:34,603 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:29:34,605 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:34,607 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to bind parameter 'RoleId' of type 'System.Int32' ...
+2025-09-10 08:29:34,609 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder Attempting to bind parameter 'RoleId' of type 'System.Int32' using the name 'RoleId' in request data ...
+2025-09-10 08:29:34,612 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder Done attempting to bind parameter 'RoleId' of type 'System.Int32'.
+2025-09-10 08:29:34,613 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to bind parameter 'RoleId' of type 'System.Int32'.
+2025-09-10 08:29:34,614 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Attempting to validate the bound parameter 'RoleId' of type 'System.Int32' ...
+2025-09-10 08:29:34,616 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder Done attempting to validate the bound parameter 'RoleId' of type 'System.Int32'.
+2025-09-10 08:29:34,632 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Compiling query expression: 
+'DbSet<Role>()
+    .Where(role => role.RoleId == __RoleId_0)
+    .FirstOrDefault()'
+2025-09-10 08:29:34,680 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Query Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Role>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__RoleId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.RoleId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Createdate (DateTime) Required, 1], [Property: Role.Description (string), 2], [Property: Role.IsActive (bool) Required, 3], [Property: Role.IsDeleated (bool) Required, 4], [Property: Role.RoleName (string) Required MaxLength(250), 5], [Property: Role.Updatedate (DateTime) Required, 6] }
+            SELECT TOP(1) r.RoleId, r.Createdate, r.Description, r.IsActive, r.IsDeleated, r.RoleName, r.Updatedate
+            FROM Roles AS r
+            WHERE r.RoleId == @__RoleId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Role entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Role instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Role);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Role.RoleId PK | Resolver: c => c.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Role)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]: 
+                            {
+                                return 
+                                {
+                                    Role instance;
+                                    instance = new Role();
+                                    instance.<RoleId>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Createdate>k__BackingField = dataReader.GetDateTime(1);
+                                    instance.<Description>k__BackingField = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(3);
+                                    instance.<IsDeleated>k__BackingField = dataReader.GetBoolean(4);
+                                    instance.<RoleName>k__BackingField = dataReader.GetString(5);
+                                    instance.<Updatedate>k__BackingField = dataReader.GetDateTime(6);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CoreWebApiSuperHero.Data.Role")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Role)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: CoreWebApiSuperHero.Data.CollegeDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-09-10 08:29:34,694 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:29:34,696 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (2ms).
+2025-09-10 08:29:34,698 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,699 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,701 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:34,702 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:34,703 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-10 08:29:34,705 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@__RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__RoleId_0
+2025-09-10 08:29:34,709 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (4ms) [Parameters=[@__RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__RoleId_0
+2025-09-10 08:29:34,712 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:34,714 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,715 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 4ms reading results.
+2025-09-10 08:29:34,717 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,718 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:34,722 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking An entity of type 'Role' tracked by 'CollegeDBContext' changed state from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:34,725 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges starting for 'CollegeDBContext'.
+2025-09-10 08:29:34,727 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges starting for 'CollegeDBContext'.
+2025-09-10 08:29:34,728 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking DetectChanges completed for 'CollegeDBContext'.
+2025-09-10 08:29:34,735 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,736 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,738 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:34,740 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:34,741 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-10 08:29:34,743 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Roles]
+OUTPUT 1
+WHERE [RoleId] = @p0;
+2025-09-10 08:29:34,755 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Roles]
+OUTPUT 1
+WHERE [RoleId] = @p0;
+2025-09-10 08:29:34,758 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,759 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 2ms reading results.
+2025-09-10 08:29:34,761 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,762 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:34,766 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking An entity of type 'Role' tracked by 'CollegeDBContext' changed state from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:34,767 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Update SaveChanges completed for 'CollegeDBContext' with 1 entities written to the database.
+2025-09-10 08:29:34,769 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:29:34,771 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:29:34,773 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:29:34,774 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing OkObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:29:34,776 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.DeleteRole (CoreWebApiSuperHero) in 175.9469ms
+2025-09-10 08:29:34,778 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.DeleteRole (CoreWebApiSuperHero)'
+2025-09-10 08:29:34,779 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:29:34,781 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:34,782 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:29:34,784 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 DELETE https://localhost:7128/api/Role/7 - 200 58 text/json;+charset=utf-8 211.9319ms
+2025-09-10 08:29:55,258 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/api/Role/All - - -
+2025-09-10 08:29:55,261 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path  does not match the path filter
+2025-09-10 08:29:55,266 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 2 candidate(s) found for the request path '/api/Role/All'
+2025-09-10 08:29:55,293 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)' with route pattern 'api/Role/All' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:55,295 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetRoleByName (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleName:alpha}' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:55,297 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:55,298 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:55,300 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] GetAllRoles() on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:29:55,301 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:29:55,303 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:29:55,305 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:29:55,306 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:29:55,308 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:29:55,310 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:55,312 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:29:55,314 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:55,316 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:29:55,317 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (1ms).
+2025-09-10 08:29:55,319 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:55,320 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:55,321 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:55,323 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:55,324 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-09-10 08:29:55,326 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:55,330 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:55,332 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:55,333 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:55,335 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:55,336 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 4ms reading results.
+2025-09-10 08:29:55,337 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:55,339 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:55,340 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:29:55,342 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/plain'.
+2025-09-10 08:29:55,343 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2025-09-10 08:29:55,345 [.NET TP Worker]  WARN Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor No output formatter was found for content types 'text/plain' to write the response.
+2025-09-10 08:29:55,346 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero) in 36.7102ms
+2025-09-10 08:29:55,348 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:55,349 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:29:55,350 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:55,352 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:29:55,353 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/api/Role/All - 406 0 - 95.9336ms
+2025-09-10 08:29:59,324 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request starting HTTP/2 GET https://localhost:7128/api/Role/All - - -
+2025-09-10 08:29:59,326 [.NET TP Worker] DEBUG Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware The request path  does not match the path filter
+2025-09-10 08:29:59,328 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher 2 candidate(s) found for the request path '/api/Role/All'
+2025-09-10 08:29:59,330 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)' with route pattern 'api/Role/All' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:59,332 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.Matching.DfaMatcher Endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetRoleByName (CoreWebApiSuperHero)' with route pattern 'api/Role/{RoleName:alpha}' is valid for the request path '/api/Role/All'
+2025-09-10 08:29:59,333 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware Request matched endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:59,335 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executing endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:59,337 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Route matched with {action = "GetAllRoles", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CoreWebApiSuperHero.Models.ApiResponse]] GetAllRoles() on controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero).
+2025-09-10 08:29:59,338 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of authorization filters (in the following order): None
+2025-09-10 08:29:59,340 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of resource filters (in the following order): None
+2025-09-10 08:29:59,341 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2025-09-10 08:29:59,343 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of exception filters (in the following order): None
+2025-09-10 08:29:59,344 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2025-09-10 08:29:59,347 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executing controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:59,349 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure Entity Framework Core 9.0.8 initialized 'CollegeDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.8' with options: EngineType=SqlServer 
+2025-09-10 08:29:59,351 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed controller factory for controller CoreWebApiSuperHero.Controllers.RoleController (CoreWebApiSuperHero)
+2025-09-10 08:29:59,353 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Creating DbConnection.
+2025-09-10 08:29:59,354 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Created DbConnection. (1ms).
+2025-09-10 08:29:59,356 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opening connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:59,358 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Opened connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:59,360 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Creating DbCommand for 'ExecuteReader'.
+2025-09-10 08:29:59,361 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Created DbCommand for 'ExecuteReader' (1ms).
+2025-09-10 08:29:59,363 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-09-10 08:29:59,364 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:59,368 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoleId], [r].[Createdate], [r].[Description], [r].[IsActive], [r].[IsDeleated], [r].[RoleName], [r].[Updatedate]
+FROM [Roles] AS [r]
+2025-09-10 08:29:59,371 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:59,372 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.ChangeTracking Context 'CollegeDBContext' started tracking 'Role' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-09-10 08:29:59,374 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command Closing data reader to 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:59,375 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Command A data reader for 'CollegeDB' on server 'LAPTOP-QPGHSJBD' is being disposed after spending 4ms reading results.
+2025-09-10 08:29:59,377 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:59,378 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Closed connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD' (1ms).
+2025-09-10 08:29:59,380 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter
+2025-09-10 08:29:59,383 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Attempting to select an output formatter based on Accept header 'text/json'.
+2025-09-10 08:29:59,384 [.NET TP Worker] DEBUG Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2025-09-10 08:29:59,386 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor Executing ObjectResult, writing value of type 'CoreWebApiSuperHero.Models.ApiResponse'.
+2025-09-10 08:29:59,388 [.NET TP Worker]  INFO Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker Executed action CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero) in 41.1527ms
+2025-09-10 08:29:59,389 [.NET TP Worker]  INFO Microsoft.AspNetCore.Routing.EndpointMiddleware Executed endpoint 'CoreWebApiSuperHero.Controllers.RoleController.GetAllRoles (CoreWebApiSuperHero)'
+2025-09-10 08:29:59,391 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Infrastructure 'CollegeDBContext' disposed.
+2025-09-10 08:29:59,392 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposing connection to database 'CollegeDB' on server 'LAPTOP-QPGHSJBD'.
+2025-09-10 08:29:59,394 [.NET TP Worker] DEBUG Microsoft.EntityFrameworkCore.Database.Connection Disposed connection to database '' on server '' (1ms).
+2025-09-10 08:29:59,395 [.NET TP Worker]  INFO Microsoft.AspNetCore.Hosting.Diagnostics Request finished HTTP/2 GET https://localhost:7128/api/Role/All - 200 211 text/json;+charset=utf-8 71.7882ms

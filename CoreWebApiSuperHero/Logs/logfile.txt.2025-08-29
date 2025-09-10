@@ -1,0 +1,338 @@
+2025-08-29 11:18:13,665 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:18:13,675 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:18:13,693 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:18:13,730 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:18:13,735 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:18:13,736 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:18:13,740 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:18:13,745 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829181801_AddDepartmentsTable'.
+2025-08-29 11:18:14,013 [1] ERROR Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (263ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+EXEC sp_rename N'[Departments].[Id]', N'DepartmentId', 'COLUMN';
+2025-08-29 11:28:36,980 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (179ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CollegeDB];
+2025-08-29 11:28:37,058 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CollegeDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-08-29 11:28:37,071 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:28:37,073 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:28:37,091 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:28:37,124 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:28:37,130 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:28:37,131 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:28:37,139 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:28:37,145 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829182806_InitialCreat'.
+2025-08-29 11:28:37,167 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [DepartmentId] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(250) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+);
+2025-08-29 11:28:37,173 [1] ERROR Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [StudentName] nvarchar(50) NOT NULL,
+    [Email] nvarchar(250) NULL,
+    [Address] nvarchar(500) NULL,
+    [DOB] datetime2 NULL,
+    [DepartmentId] int NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Student_Department] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId]) ON DELETE SET NULL
+);
+2025-08-29 11:29:31,123 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:29:31,133 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:29:31,146 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:29:31,185 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:29:31,191 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:29:31,192 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:29:31,196 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:29:31,204 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829182806_InitialCreat'.
+2025-08-29 11:29:31,232 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [DepartmentId] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(250) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+);
+2025-08-29 11:29:31,237 [1] ERROR Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [StudentName] nvarchar(50) NOT NULL,
+    [Email] nvarchar(250) NULL,
+    [Address] nvarchar(500) NULL,
+    [DOB] datetime2 NULL,
+    [DepartmentId] int NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Student_Department] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId]) ON DELETE SET NULL
+);
+2025-08-29 11:39:56,829 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (175ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CollegeAPIDB];
+2025-08-29 11:39:56,880 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CollegeAPIDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-08-29 11:39:56,892 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:39:56,894 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:39:56,908 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:39:56,941 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:39:56,947 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:39:56,948 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:39:56,954 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:39:56,960 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829183902_InitialCreat'.
+2025-08-29 11:39:56,978 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [DepartmentId] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(250) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+);
+2025-08-29 11:39:56,981 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [StudentName] nvarchar(50) NOT NULL,
+    [Email] nvarchar(250) NULL,
+    [Address] nvarchar(500) NULL,
+    [DOB] datetime2 NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id])
+);
+2025-08-29 11:39:57,011 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName', N'Description') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] ON;
+INSERT INTO [Departments] ([DepartmentId], [DepartmentName], [Description])
+VALUES (1, N'ECS', N'Engineering Computer Science'),
+(2, N'CES', N'Computer Engineering Science');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName', N'Description') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] OFF;
+2025-08-29 11:39:57,023 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'DOB', N'Email', N'StudentName') AND [object_id] = OBJECT_ID(N'[Students]'))
+    SET IDENTITY_INSERT [Students] ON;
+INSERT INTO [Students] ([Id], [Address], [DOB], [Email], [StudentName])
+VALUES (1, N'India', '1982-06-12T00:00:00.0000000', N'prachi.karade@gmail.com', N'Prachi'),
+(2, N'India', '2014-07-15T00:00:00.0000000', N'sarvada.jothangiya@gmail.com', N'Sarvada');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'DOB', N'Email', N'StudentName') AND [object_id] = OBJECT_ID(N'[Students]'))
+    SET IDENTITY_INSERT [Students] OFF;
+2025-08-29 11:39:58,014 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250829183902_InitialCreat', N'9.0.8');
+2025-08-29 11:39:58,022 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-08-29 11:46:01,813 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:46:01,822 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:46:01,839 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:46:01,872 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:46:01,877 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:46:01,877 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:46:01,882 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:46:01,888 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829184554_AddStudentDepartmentFK'.
+2025-08-29 11:46:01,911 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Students] ADD [DepartmentId] int NOT NULL DEFAULT 0;
+2025-08-29 11:46:01,917 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE [Students] SET [DepartmentId] = 0
+WHERE [Id] = 1;
+SELECT @@ROWCOUNT;
+2025-08-29 11:46:01,965 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+UPDATE [Students] SET [DepartmentId] = 0
+WHERE [Id] = 2;
+SELECT @@ROWCOUNT;
+2025-08-29 11:46:01,972 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Students_DepartmentId] ON [Students] ([DepartmentId]);
+2025-08-29 11:46:01,977 [1] ERROR Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Students] ADD CONSTRAINT [FK_Student_Department] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId]) ON DELETE SET NULL;
+2025-08-29 11:49:33,053 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:49:33,063 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 11:49:33,078 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 11:49:33,111 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 11:49:33,116 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 11:49:33,117 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 11:49:33,122 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 11:49:33,127 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829184923_AddStudentDepartmentFK'.
+2025-08-29 11:49:33,180 [1] ERROR Microsoft.EntityFrameworkCore.Database.Command Failed executing DbCommand (41ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var sysname;
+SELECT @var = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Students]') AND [c].[name] = N'DepartmentId');
+IF @var IS NOT NULL EXEC(N'ALTER TABLE [Students] DROP CONSTRAINT [' + @var + '];');
+ALTER TABLE [Students] ALTER COLUMN [DepartmentId] int NULL;
+2025-08-29 12:02:00,084 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (200ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [CollegeDB];
+2025-08-29 12:02:00,138 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (47ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [CollegeDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2025-08-29 12:02:00,151 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 12:02:00,153 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-08-29 12:02:00,168 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-08-29 12:02:00,203 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-08-29 12:02:00,208 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2025-08-29 12:02:00,210 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-08-29 12:02:00,218 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-08-29 12:02:00,224 [1]  INFO Microsoft.EntityFrameworkCore.Migrations Applying migration '20250829190151_InitialCreat'.
+2025-08-29 12:02:00,243 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Departments] (
+    [DepartmentId] int NOT NULL IDENTITY,
+    [DepartmentName] nvarchar(250) NOT NULL,
+    [Description] nvarchar(500) NULL,
+    CONSTRAINT [PK_Departments] PRIMARY KEY ([DepartmentId])
+);
+2025-08-29 12:02:00,246 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [Id] int NOT NULL IDENTITY,
+    [StudentName] nvarchar(50) NOT NULL,
+    [Email] nvarchar(250) NULL,
+    [Address] nvarchar(500) NULL,
+    [DOB] datetime2 NULL,
+    [DepartmentId] int NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Student_Department] FOREIGN KEY ([DepartmentId]) REFERENCES [Departments] ([DepartmentId]) ON DELETE SET NULL
+);
+2025-08-29 12:02:00,278 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName', N'Description') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] ON;
+INSERT INTO [Departments] ([DepartmentId], [DepartmentName], [Description])
+VALUES (1, N'ECS', N'Engineering Computer Science'),
+(2, N'CES', N'Computer Engineering Science');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'DepartmentId', N'DepartmentName', N'Description') AND [object_id] = OBJECT_ID(N'[Departments]'))
+    SET IDENTITY_INSERT [Departments] OFF;
+2025-08-29 12:02:00,293 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'DOB', N'DepartmentId', N'Email', N'StudentName') AND [object_id] = OBJECT_ID(N'[Students]'))
+    SET IDENTITY_INSERT [Students] ON;
+INSERT INTO [Students] ([Id], [Address], [DOB], [DepartmentId], [Email], [StudentName])
+VALUES (1, N'India', '1982-06-12T00:00:00.0000000', NULL, N'prachi.karade@gmail.com', N'Prachi'),
+(2, N'India', '2014-07-15T00:00:00.0000000', NULL, N'sarvada.jothangiya@gmail.com', N'Sarvada');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Address', N'DOB', N'DepartmentId', N'Email', N'StudentName') AND [object_id] = OBJECT_ID(N'[Students]'))
+    SET IDENTITY_INSERT [Students] OFF;
+2025-08-29 12:02:01,139 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Students_DepartmentId] ON [Students] ([DepartmentId]);
+2025-08-29 12:02:01,143 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250829190151_InitialCreat', N'9.0.8');
+2025-08-29 12:02:01,148 [1]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result

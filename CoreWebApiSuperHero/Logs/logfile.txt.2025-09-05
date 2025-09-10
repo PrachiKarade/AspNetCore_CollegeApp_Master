@@ -1,0 +1,276 @@
+2025-09-05 08:06:26,902 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:06:26,914 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:06:27,020 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:06:27,022 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:06:27,023 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:09:01,441 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.ArgumentException: IDX12401: Expires: '9/5/2025 9:08:43 AM' must be after NotBefore: '9/5/2025 3:08:53 PM'.
+   at System.IdentityModel.Tokens.Jwt.JwtPayload.AddFirstPriorityClaims(String issuer, String audience, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt)
+   at System.IdentityModel.Tokens.Jwt.JwtPayload..ctor(String issuer, String audience, IEnumerable`1 claims, IDictionary`2 claimsCollection, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at CoreWebApiSuperHero.Controllers.LoginController.Login(LoginDTO loginDTO) in C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero\Controllers\LoginController.cs:line 51
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:12:21,477 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:12:21,484 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:12:21,543 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:12:21,544 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:12:21,545 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:13:40,931 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:13:40,939 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:13:41,009 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:13:41,012 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:13:41,013 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:20:29,207 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:20:29,215 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:20:29,308 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:20:29,311 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:20:29,312 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:25:22,671 [.NET TP Worker]  INFO CoreWebApiSuperHero.Controllers.DemoControllerForLog This is from Information log level
+2025-09-05 08:25:22,676 [.NET TP Worker]  WARN CoreWebApiSuperHero.Controllers.DemoControllerForLog This is from Warning log level
+2025-09-05 08:25:22,678 [.NET TP Worker] ERROR CoreWebApiSuperHero.Controllers.DemoControllerForLog This is from Error log level
+2025-09-05 08:25:22,679 [.NET TP Worker] FATAL CoreWebApiSuperHero.Controllers.DemoControllerForLog This is from Fetal log level
+2025-09-05 08:27:32,014 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:27:32,022 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:27:32,082 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:27:32,083 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:27:32,084 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:27:32,656 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:28:41,614 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:28:41,621 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:28:41,683 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:28:41,685 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:28:41,686 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:28:42,594 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:30:08,696 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:30:08,703 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:30:08,768 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:30:08,770 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:30:08,771 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:30:09,448 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:30:58,967 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:30:58,973 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:30:59,040 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:30:59,042 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:30:59,044 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:30:59,556 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:33:51,950 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:33:51,957 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:33:52,034 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:33:52,036 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:33:52,038 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:33:52,796 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:35:27,196 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:35:27,203 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:35:27,271 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:35:27,273 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:35:27,274 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:35:28,158 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:36:12,767 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:36:12,775 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:36:12,862 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:36:12,865 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:36:12,866 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:36:13,463 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:36:50,368 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:36:50,376 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:36:50,441 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:36:50,443 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:36:50,483 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:36:51,117 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:41:35,580 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:41:35,587 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:41:35,654 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:41:35,656 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:41:35,686 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:41:36,292 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - CoreWebApiSuperHero.Controllers.StudentController.GetStudentByIdAsync (CoreWebApiSuperHero). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 08:42:20,329 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:42:20,337 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:42:20,410 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:42:20,412 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:42:20,413 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:50:42,035 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:50:42,041 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:50:42,100 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:50:42,102 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:50:42,133 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 08:57:35,375 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 08:57:35,382 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 08:57:35,462 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 08:57:35,465 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 08:57:35,466 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:18:44,212 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:18:44,221 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:18:44,290 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:18:44,291 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:18:44,292 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:23:54,990 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:23:54,998 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:23:55,062 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:23:55,063 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:23:55,064 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:29:50,339 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:29:50,346 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:29:50,408 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:29:50,409 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:29:50,410 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:31:50,907 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:31:50,915 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:31:50,984 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:31:50,986 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:31:50,987 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:35:46,424 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:35:46,432 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:35:46,487 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:35:46,488 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:35:46,489 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:39:28,923 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:39:28,930 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:39:28,986 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:39:28,988 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:39:28,989 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 09:49:43,659 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 09:49:43,666 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 09:49:43,729 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 09:49:43,730 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 09:49:43,731 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 10:03:06,717 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 10:03:06,724 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 10:03:06,781 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 10:03:06,783 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 10:03:06,784 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 10:03:20,388 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CoreWebApiSuperHero.Data.Repository.IStudentRepository' while attempting to activate 'CoreWebApiSuperHero.Controllers.StudentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 10:03:53,040 [.NET TP Worker] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'CoreWebApiSuperHero.Data.Repository.IStudentRepository' while attempting to activate 'CoreWebApiSuperHero.Controllers.StudentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-05 10:09:01,801 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 10:09:01,807 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 10:09:01,862 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 10:09:01,864 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 10:09:01,865 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
+2025-09-05 10:09:17,476 [.NET TP Worker]  INFO CoreWebApiSuperHero.Controllers.StudentController GetStudents method called
+2025-09-05 10:09:18,934 [.NET TP Worker]  INFO Microsoft.EntityFrameworkCore.Database.Command Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+2025-09-05 10:10:03,049 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: https://localhost:7128
+2025-09-05 10:10:03,056 [1]  INFO Microsoft.Hosting.Lifetime Now listening on: http://localhost:5177
+2025-09-05 10:10:03,112 [1]  INFO Microsoft.Hosting.Lifetime Application started. Press Ctrl+C to shut down.
+2025-09-05 10:10:03,113 [1]  INFO Microsoft.Hosting.Lifetime Hosting environment: Development
+2025-09-05 10:10:03,115 [1]  INFO Microsoft.Hosting.Lifetime Content root path: C:\Users\prach\source\repos\aspnetCore\CoreWebApiSuperHero\CoreWebApiSuperHero
