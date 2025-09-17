@@ -153,7 +153,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
-//app.UseCors("AllowAll"); // This is used to enable CORS in the application with the default policy
+app.UseCors("AllowAll"); // This is used to enable CORS in the application with the default policy
 
 app.UseAuthentication();
 app.UseAuthorization();

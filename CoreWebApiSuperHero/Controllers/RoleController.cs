@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CoreWebApiSuperHero.Data;
 using System.Net;
+using Microsoft.AspNetCore.Cors;
 
 namespace CoreWebApiSuperHero.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")]
     public class RoleController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -22,6 +24,11 @@ namespace CoreWebApiSuperHero.Controllers
 
         [HttpGet]
         [Route("All", Name = "GetAllRoles")]
+        [ProducesResponseType(StatusCodes.Status200OK)]         // successfully requested if the Role is found
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
+        [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
         public async Task<ActionResult<ApiResponse>> GetAllRoles()
         {
             try
@@ -46,6 +53,11 @@ namespace CoreWebApiSuperHero.Controllers
 
         [HttpGet]
         [Route("{RoleId:int}", Name = "GetRoleById")]
+        [ProducesResponseType(StatusCodes.Status200OK)]         //
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
+        [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
         public async Task<ActionResult<ApiResponse>> GetRoleById(int RoleId)
         {
             try
@@ -75,6 +87,11 @@ namespace CoreWebApiSuperHero.Controllers
 
         [HttpGet]
         [Route("{RoleName:alpha}", Name = "GetRoleByName")]
+        [ProducesResponseType(StatusCodes.Status200OK)]         //requested if the Role is found
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
+        [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
         public async Task<ActionResult<ApiResponse>> GetRoleByName(string RoleName)
         {
             try
@@ -103,6 +120,12 @@ namespace CoreWebApiSuperHero.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is created successfully
+        [ProducesResponseType(StatusCodes.Status201Created)]    //if the Role is created successfully
+        [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
+        [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
+        [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
         public async Task<ActionResult<ApiResponse>> CreateRoleAsync([FromBody] RoleDTO objRoleDTO)
         {
             try 
@@ -142,12 +165,11 @@ namespace CoreWebApiSuperHero.Controllers
 
         [HttpPut]
         [Route("UpdateRole")]
-        [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is deleted successfully
+        [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is updated successfully        
         [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
         [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
         [ProducesResponseType(StatusCodes.Status403Forbidden)]  //if we have authorization
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
-
         public async Task<ActionResult<ApiResponse>> UpdateRole(RoleDTO objRoleDTO)
         {
             try
