@@ -62,10 +62,10 @@ namespace CoreWebApiSuperHero.Controllers
         {
             try
             {
-                if (RoleId <= 0 )
+                if (RoleId <= 0)
                     return BadRequest();
 
-                var role = await _roleRepository.GetByFilterAsync(role=>role.RoleId == RoleId, false);
+                var role = await _roleRepository.GetByFilterAsync(role => role.RoleId == RoleId, false);
 
                 if (role == null)
                     return NotFound($"Role not found with the RoleId: {RoleId}");
@@ -128,7 +128,7 @@ namespace CoreWebApiSuperHero.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]//if there is any server error
         public async Task<ActionResult<ApiResponse>> CreateRoleAsync([FromBody] RoleDTO objRoleDTO)
         {
-            try 
+            try
             {
 
                 if (objRoleDTO == null)
@@ -136,7 +136,7 @@ namespace CoreWebApiSuperHero.Controllers
 
                 if (objRoleDTO.RoleName == null)
                     return NotFound();
-                
+
                 Role objRole = _mapper.Map<Role>(objRoleDTO);
                 objRole.Createdate = DateTime.UtcNow;
                 objRole.Updatedate = DateTime.UtcNow;
@@ -154,17 +154,16 @@ namespace CoreWebApiSuperHero.Controllers
                 //return CreatedAtRoute("GetRoleById", new { id = objRoleDTO.RoleId }, _apiResponse); // this will return the created Role with a 201 Created status code
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _apiResponse.Status = false;
                 _apiResponse.StatusCode = System.Net.HttpStatusCode.InternalServerError;
                 _apiResponse.Errors = new List<string>() { ex.Message };
                 return BadRequest(_apiResponse);
-            }            
+            }
         }
 
-        [HttpPut]
-        [Route("UpdateRole")]
+        [HttpPut(Name = "UpdateRole")]
         [ProducesResponseType(StatusCodes.Status200OK)]         //if the Role is updated successfully        
         [ProducesResponseType(StatusCodes.Status400BadRequest)] //if the RoleId is less than or equal to 0
         [ProducesResponseType(StatusCodes.Status404NotFound)]   //if the Role with the given RoleId is not found
@@ -174,22 +173,22 @@ namespace CoreWebApiSuperHero.Controllers
         {
             try
             {
-                if (objRoleDTO == null || objRoleDTO.RoleId <= 0)
+                if (objRoleDTO == null)
                     return BadRequest();
 
                 var existingRole = await _roleRepository.GetByFilterAsync(role => role.RoleId == objRoleDTO.RoleId, true);
 
                 if (existingRole == null)
-                    return NotFound($"Role not found with the RoleId: {objRoleDTO.RoleId}");
+                    return NotFound($"Role not found with the RoleId: {objRoleDTO.RoleId}");                
 
-                var newRole = _mapper.Map<Role>(objRoleDTO);//map the objRoleDTO to newRole object of type Role
+                _mapper.Map(objRoleDTO, existingRole);//map the objRoleDTO to newRole object of type Role
 
-                newRole.Createdate = existingRole.Createdate; //keep the original created date
-                newRole.Updatedate = DateTime.UtcNow;
+                existingRole.Createdate = existingRole.Createdate; //keep the original created date
+                existingRole.Updatedate = DateTime.UtcNow;
 
-                await _roleRepository.UpdateAsync(newRole);
+                await _roleRepository.UpdateAsync(existingRole);
 
-                _apiResponse.Data = newRole;
+                _apiResponse.Data = existingRole;
                 _apiResponse.Status = true;
                 _apiResponse.StatusCode = HttpStatusCode.OK;
 
