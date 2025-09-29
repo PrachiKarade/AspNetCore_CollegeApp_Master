@@ -48,11 +48,9 @@ namespace CoreWebApiSuperHero.Controllers
 
                     localIssuer = _IConfiguration.GetValue<string>("GoogleIssuer");
                     localAudience = _IConfiguration.GetValue<string>("GoogleAudience");
-                }
-
-                var tokenHandler = new JwtSecurityTokenHandler(); // create token handler
-                //// create security token descriptor
-                var tokenDescriptor = new SecurityTokenDescriptor()
+                }                
+                
+                var tokenDescriptor = new SecurityTokenDescriptor() //// create security token descriptor
                 {
                     Issuer = localIssuer,
                     Audience = localAudience,
@@ -64,7 +62,7 @@ namespace CoreWebApiSuperHero.Controllers
                     Expires = DateTime.UtcNow.AddHours(1),
                     SigningCredentials = new(new SymmetricSecurityKey(Key), SecurityAlgorithms.HmacSha256)
                 };
-
+                var tokenHandler = new JwtSecurityTokenHandler(); // create token handler
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 responseDTO.jwtToken = tokenHandler.WriteToken(token);                
             }

@@ -1,5 +1,7 @@
 ﻿
+using System.Data;
 using System.Linq.Expressions;
+using Microsoft.Data.SqlClient;
 
 namespace CoreWebApiSuperHero.Data.Repository
 {
@@ -20,6 +22,7 @@ namespace CoreWebApiSuperHero.Data.Repository
             await _collegeDBContext.SaveChangesAsync();
             return tobj;
         }
+       
         public async Task<T> UpdateAsync(T tobj)
         {
             _dbSet.Update(tobj);
@@ -39,7 +42,7 @@ namespace CoreWebApiSuperHero.Data.Repository
             return await _dbSet.ToListAsync();
         }
 
-        public async Task<T> GetByFilterAsync(Expression<Func<T, bool>> filter, bool useNoTracking)
+        public async Task<T> GetByFilterAsync(Expression<Func<T, bool>> filter, bool useNoTracking = false)
         {
             if (useNoTracking)
                 return await _dbSet.AsNoTracking().Where(filter).FirstOrDefaultAsync();
@@ -47,13 +50,13 @@ namespace CoreWebApiSuperHero.Data.Repository
                 return await _dbSet.Where(filter).FirstOrDefaultAsync();
         }
 
-        /*public async Task<T> GetByIdAsync(Expression<Func<T,bool>> filter, bool useNoTracking)
+        public async Task<List<T>> GetAllByFilterAsync(Expression<Func<T,bool>> filter, bool useNoTracking = false)
         {
             if (useNoTracking)
-                return await _dbSet.AsNoTracking().Where(filter).FirstOrDefaultAsync();
+                return await _dbSet.AsNoTracking().Where(filter).ToListAsync();
             else
-                return await _dbSet.Where(filter).FirstOrDefaultAsync();
-        }*/
+                return await _dbSet.Where(filter).ToListAsync();
+        }
                
     }
 }

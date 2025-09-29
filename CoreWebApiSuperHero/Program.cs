@@ -1,9 +1,7 @@
 ﻿global using AutoMapper;
 global using CoreWebApiSuperHero.Models;
 global using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.Xml;
 using System.Text;
-using System.Text.Json.Serialization;
 using CoreWebApiSuperHero.Configurations;
 using CoreWebApiSuperHero.Data;
 using CoreWebApiSuperHero.Data.Repository;
@@ -20,12 +18,13 @@ builder.Logging.ClearProviders(); // This is used to clear the default logging p
 
 // Add services to the container.
 
-builder.Services.AddControllers(option=>option.ReturnHttpNotAcceptable = true).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters(); // This is used to enable JSON patch support in ASP.NET Core
+builder.Services.AddControllers(option => option.ReturnHttpNotAcceptable = true).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters(); // This is used to enable JSON patch support in ASP.NET Core
 
-builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();// This is used to register the SuperHeroService for dependency injection
-builder.Services.AddScoped<IStudentRepository, StudentRepository>();// This is used to register the SuperHeroService for dependency injection
-
-builder.Services.AddScoped(typeof(ICollegeRepository<>),typeof(CollegeRepository<>));// This is used to register the common repository for dependency injection
+builder.Services.AddScoped<ISuperHeroService, SuperHeroService>();      // This is used to register the SuperHeroService for dependency injection
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();    // This is used to register the SuperHeroService for dependency injection
+builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));// This is used to register the common repository for dependency injection
+builder.Services.AddScoped<IUserRepository, UserRepository>();      // This is used to register the UserRepository for dependency injection
+builder.Services.AddScoped<IUserService, UserService>();            // This is used to register the UserService for dependency injection
 
 builder.Services.AddDbContext<DataContext>(options =>
 
@@ -60,8 +59,8 @@ builder.Services.AddSwaggerGen(options =>
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "JWT authoriztion header using the bearer scheme.Enter Bearer[space] and your token in text input eg. Barear sarvada6786",
-        Name ="Autorization",
-        In   = ParameterLocation.Header,
+        Name = "Autorization",
+        In = ParameterLocation.Header,
         Scheme = "Bearer"
     });
     options.AddSecurityRequirement(new OpenApiSecurityRequirement()
@@ -89,22 +88,22 @@ string audience = builder.Configuration.GetValue<string>("LocalAudience");
 
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; 
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;    
-}).AddJwtBearer("LocalUsers", options =>                                                      
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer("LocalUsers", options =>
 {
-    options.IncludeErrorDetails = true;                                    
+    options.IncludeErrorDetails = true;
     //options.RequireHttpsMetadata = false;  This is used to specify whether HTTPS is required for the metadata address or authority
-    options.SaveToken = true;                                           
+    options.SaveToken = true;
     options.TokenValidationParameters = new TokenValidationParameters()
     {
-        ValidateIssuerSigningKey = true,                            
-        IssuerSigningKey         = new SymmetricSecurityKey(key),         
-        ValidateIssuer           = true,    
-        ValidIssuer             = issuer,
-        ValidateAudience         = true,
-        ValidAudience           = audience
-                
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = true,
+        ValidIssuer = issuer,
+        ValidateAudience = true,
+        ValidAudience = audience
+
         //ValidAlgorithms = new[] { SecurityAlgorithms.HmacSha512 }
     };
 
@@ -130,12 +129,12 @@ builder.Services.AddAuthentication(options =>
 });// This is used to add JWT authentication to the application
 
 builder.Services.AddCors(Options =>
-{ 
+{
     Options.AddDefaultPolicy(policy =>
     {
         policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
     });
-    Options.AddPolicy("AllowAll", policy=>
+    Options.AddPolicy("AllowAll", policy =>
     {
         policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();// This is used to allow only the specified origin to access the API. // This is used to allow any header in the request
         // This is used to allow any HTTP method (GET, POST, PUT, DELETE, etc.) in the request

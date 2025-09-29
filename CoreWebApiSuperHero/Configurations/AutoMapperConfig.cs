@@ -22,6 +22,8 @@ namespace CoreWebApiSuperHero.Configurations
             .ForMember(x=>x.Address,opt=>opt.MapFrom(src => string.IsNullOrEmpty(src.Address)?"Address not found":src.Address) );
 
             CreateMap<Models.RoleDTO, Role>().ReverseMap();
+            CreateMap<Models.RolePrivilegeDTO, RolePrivilege>().ReverseMap();
+            CreateMap<Models.UserDTO, User>().ReverseMap();
         }
     }
 }
