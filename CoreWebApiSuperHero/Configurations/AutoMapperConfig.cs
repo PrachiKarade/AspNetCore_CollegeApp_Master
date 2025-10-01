@@ -24,6 +24,8 @@ namespace CoreWebApiSuperHero.Configurations
             CreateMap<Models.RoleDTO, Role>().ReverseMap();
             CreateMap<Models.RolePrivilegeDTO, RolePrivilege>().ReverseMap();
             CreateMap<Models.UserDTO, User>().ReverseMap();
+            CreateMap<Models.CompanyDTO, Data.EntityModel.Company>().ReverseMap();
+            CreateMap<Models.EmployeeDTO, Data.EntityModel.Employee>().ReverseMap();
         }
     }
 }

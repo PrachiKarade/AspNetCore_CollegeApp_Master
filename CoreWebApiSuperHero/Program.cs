@@ -6,6 +6,7 @@ using CoreWebApiSuperHero.Configurations;
 using CoreWebApiSuperHero.Data;
 using CoreWebApiSuperHero.Data.Repository;
 using CoreWebApiSuperHero.Services;
+using CoreWebApiSuperHero.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -25,6 +26,9 @@ builder.Services.AddScoped<IStudentRepository, StudentRepository>();    // This 
 builder.Services.AddScoped(typeof(ICollegeRepository<>), typeof(CollegeRepository<>));// This is used to register the common repository for dependency injection
 builder.Services.AddScoped<IUserRepository, UserRepository>();      // This is used to register the UserRepository for dependency injection
 builder.Services.AddScoped<IUserService, UserService>();            // This is used to register the UserService for dependency injection
+builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+builder.Services.AddScoped<IDbConnectionProvider, DbConnectionProvider>();
 
 builder.Services.AddDbContext<DataContext>(options =>
 
@@ -35,6 +39,8 @@ builder.Services.AddDbContext<CollegeDBContext>(options =>
 
     options.UseSqlServer(builder.Configuration.GetConnectionString("CollegeAppDBConnection"))//options is the DbContextOptions<DataContext> instance passed to the DataContext constructor
 );
+
+ builder.Services.Configure<SqlConnectionsSettings>(builder.Configuration.GetSection("ConnectionStrings"));// This is used to bind the SqlConnections section of the appsettings.json file to the SqlConnectionsSettings class
 
 #region SiriLog settings
 /*Log.Logger = new LoggerConfiguration()
